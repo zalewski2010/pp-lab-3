@@ -1,4 +1,5 @@
 import geometry.Point;
+import geometry.Rectangle;
 import geometry.Circle;
 import geometry.ColoredCircle;
 
@@ -22,6 +23,8 @@ public class Main {
             new Circle(new Point(2, 2), 3),
             new ColoredCircle(new Point(3, 3), 7, "zielony")
         };
+
+        Rectangle myRectangle = new Rectangle(5.0, 3.0);
         
         
         
@@ -50,7 +53,15 @@ public class Main {
                 System.out.println("Kolor koła: " + coloredCircle1.getColor());
     }
     }
+
+    double area = myRectangle.calculateArea();
+        System.out.println("Pole powierzchni prostokąta: " + area);
+
+    double perimeter = myRectangle.calculatePerimeter();
+        System.out.println("Obwód prostokąta: " + perimeter);    
     }
+
+
 }
 
 
