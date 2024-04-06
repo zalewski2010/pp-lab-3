@@ -1,5 +1,6 @@
 import geometry.Point;
 import geometry.Rectangle;
+import geometry.Square;
 import geometry.Circle;
 import geometry.ColoredCircle;
 
@@ -25,6 +26,9 @@ public class Main {
         };
 
         Rectangle myRectangle = new Rectangle(5.0, 3.0);
+
+
+        Square mySquare = new Square(4.0);
         
         
         
@@ -58,8 +62,19 @@ public class Main {
         System.out.println("Pole powierzchni prostokąta: " + area);
 
     double perimeter = myRectangle.calculatePerimeter();
-        System.out.println("Obwód prostokąta: " + perimeter);    
+        System.out.println("Obwód prostokąta: " + perimeter);  
+        
+        
+    double area1 = mySquare.calculateArea();
+    System.out.println("Pole powierzchni kwadratu: " + area1);
+
+    double perimeter1 = mySquare.calculatePerimeter();
+        System.out.println("Obwód kwadratu: " + perimeter1);
+
+
     }
+
+
 
 
 }
