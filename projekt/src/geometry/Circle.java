@@ -20,4 +20,8 @@ public class Circle {
     public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
+
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
 }
